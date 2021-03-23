@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "Roger's Best Burgers",
@@ -6,8 +10,8 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "ay-XIxs0Urtbl3dl3-KYPRUKAA_4bh94gzW6iIDtt3Y",
-        spaceId: "ggoy2slt4cq0",
+        accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
       },
     },
     "gatsby-plugin-sass",
