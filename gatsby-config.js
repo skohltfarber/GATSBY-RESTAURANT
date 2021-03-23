@@ -5,6 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Roger's Best Burgers",
+    siteUrl: "https://needstobetheproductionurl.com",
   },
   plugins: [
     {
