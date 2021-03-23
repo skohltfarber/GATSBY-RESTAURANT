@@ -51,10 +51,10 @@ export default function Default({ children }) {
                 <hr></hr>
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-2">
+                        <div className="col-sm-4">
                             <small>&copy; Copyright 2020, Kohltfarber Corporation</small>
                         </div>
-                        <div className="col-sm-2">
+                        <div className="col-sm-6">
                             <HeaderNav />
                         </div>
                         <div className="col-sm-2">

@@ -69,9 +69,8 @@ const IndexPage = ({ data }) => {
         </div>
         {
           result.filter((product) => product.type === "Beverages").map((product) => {
-            console.log(product);
             return (
-              <BodyProduct id={product.id} name={product.name} image={product.image.file.url} description={product.description.description} />
+              <BodyProduct product={product} />
             )
           })
         }
@@ -88,9 +87,8 @@ const IndexPage = ({ data }) => {
         </div>
         {
           result.filter((product) => product.type === "Appetizers").map((product) => {
-            console.log(product);
             return (
-              <BodyProduct id={product.id} name={product.name} image={product.image.file.url} description={product.description.description} />
+              <BodyProduct product={product} />
             )
           })
         }
@@ -107,9 +105,8 @@ const IndexPage = ({ data }) => {
         </div>
         {
           result.filter((product) => product.type === "Burgers").map((product) => {
-            console.log(product);
             return (
-              <BodyProduct id={product.id} name={product.name} image={product.image.file.url} description={product.description.description} />
+              <BodyProduct product={product} />
             )
           })
         }

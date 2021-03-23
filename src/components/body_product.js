@@ -1,9 +1,7 @@
 import React from "react";
+import { Link } from "gatsby";
 
-const BodyProduct = props => {
-
-	const urlLink = (strLink) => "/products/" + strLink;
-
+function BodyProduct({ product }) {
 	return (
 		<>
 			<div className="row">
@@ -11,12 +9,12 @@ const BodyProduct = props => {
 			</div>
 			<div className="row row-cols-sm-1 row-cols-md-2">
 				<div className="col-sm-12 col-md-4 col-lg-3">
-					<h3>{props.name}</h3>
-					<img src={props.image} alt={props.name} />
+					<h3>{product.name}</h3>
+					<img src={product.image.file.url} alt={product.name} />
 				</div>
 				<div className="col-sm-12 col-md-8 col-lg-9">
-					<p> {props.description}</p>
-					<a href={urlLink(props.id)} className="btn btn-primary">Product Paage</a>
+					<p> {product.description.description}</p>
+					<Link to={"/products/" + product.id} className="btn btn-primary">Learn More</Link>
 				</div>
 			</div>
 		</>

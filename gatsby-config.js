@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Roger's Best Burgers",
-    siteUrl: "https://needstobetheproductionurl.com",
+    siteUrl: "https://happy-panini-9fda44.netlify.app/",
   },
   plugins: [
     {
